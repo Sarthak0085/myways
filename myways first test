@@ -1,0 +1,27 @@
+function fizzbuzz (phonenumber)
+{
+    const sum=phonenumber.split('').reduce((acc,digit) => acc+parseInt(digit),0);
+    let i=1;
+    for(;i<=sum;){
+        if(i%4==0 && i%5==0)
+        {
+            console.log('FizzBuzz');
+            
+        }
+        else if(i%4==0)
+        {
+            console.log('Fizz');
+        }
+        else if(i%5==0)
+        {
+            console.log('Buzz');
+        }
+        else
+        {
+            console.log(i);
+        }
+        i=i+1;
+    }
+}
+
+fizzbuzz("6280858716");
